@@ -1,2 +1,21 @@
-# CDL @ Hack4SocialGood 2025: Extract funding amounts from state funding programs
+# CDL @ Hack4SocialGood 2025: Extracting Funding Amounts from State Funding Programs
 
+- Development of a method to automatically extract funding amounts from funding programs.
+- The problem can be framed as a Named Entity Recognition (NER) task.
+- The data basis consists of funding programs that are part of the German federal government's "Förderdatenbank" (funding database). These have been scraped and published here.
+- The background is an attempt to quantify how much the German government spends on promoting democracy. As a first step, a classifier has already been developed to identify- democracy promotion programs. The next step is the extraction of funding amounts.
+
+## Data
+
+- The data originates from the website: www.foerderdatenbank.de
+- A description of the scraped dataset, as well as the link to the data, can be found here.
+- An example of how the data can be read using Python is available here.
+
+## Possible Approaches
+
+- NER using the Python package spaCy.
+- Fine-tuning language models like BERT.
+- In-context learning with generative LLMs.
+
+## Important Considerations
+- The method should be evaluated using suitable metrics such as the F1 Score or Accuracy.
