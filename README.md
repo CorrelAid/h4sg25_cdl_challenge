@@ -28,5 +28,12 @@
 
 ### Example Jupyte
 
+
+# New Plan
+1. extract list of NGOs and how much money they got from the government in 2023
+2. compare it to the list of NGOs
+3. calculate how high is the percentage of the whole amount that was dedicated to organizations with the goal of strengthening democracy
+   
 ## pdf Liste von im Jahr 2023 geförderten Organisationen:
 [hier](https://dserver.bundestag.de/btd/20/102/2010233.pdf)
+s. 80 (Anlage 1)
