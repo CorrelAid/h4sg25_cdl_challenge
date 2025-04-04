@@ -26,4 +26,3 @@
 
 2. uv sync
 
-### Example Jupyte
