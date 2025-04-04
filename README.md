@@ -19,3 +19,11 @@
 
 ## Important Considerations
 - The method should be evaluated using suitable metrics such as the F1 Score or Accuracy.
+
+## Setup
+
+1. Install [uv](https://docs.astral.sh/uv/#installation)
+
+2. uv sync
+
+### Example Jupyte
