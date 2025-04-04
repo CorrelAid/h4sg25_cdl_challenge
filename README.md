@@ -3,7 +3,7 @@
 - Development of a method to automatically extract funding amounts from funding programs.
 - The problem can be framed as a Named Entity Recognition (NER) or information extraction task.
 - The data basis consists of funding programs that are part of the German federal government's "Förderdatenbank" (funding database). These have been scraped and published [here](https://github.com/CorrelAid/cdl_funding_crawler).
-- The background is an attempt to quantify how much the German government spends on promoting democracy. As a first step, a classifier has already been developed to identify- democracy funding programs. The next step is the extraction of funding amounts.
+- The background is an attempt to quantify how much the German government spends on promoting democracy. As a first step, a classifier has already been developed to identify democracy funding programs. The next step is the extraction of funding amounts. You can find an article on the project (in German!) [here](https://civic-data.de/transparente_demokratiefoerderung/).
 
 ## Data
 
@@ -19,3 +19,15 @@
 
 ## Important Considerations
 - The method should be evaluated using suitable metrics such as the F1 Score or Accuracy.
+
+## Setup
+
+1. Install [uv](https://docs.astral.sh/uv/#installation)
+
+2. uv sync
+
+## Switch to branch
+
+1. git checkout methodspacy 
+
+### Example Jupyte
