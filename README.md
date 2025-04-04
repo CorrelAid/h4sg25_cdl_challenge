@@ -40,3 +40,7 @@ s. 80 (Anlage 1)
 
 ## csv list of all NGOs dedicated to the goal of strengething democracy in Germany:
 [hier](data/ZER-Förderung des demokratischen Staatswesens-20250404.csv)
+
+
+# presentation draft
+[hier](https://docs.google.com/presentation/d/1L-oxCOHbYQvFwAtFDOzxMkiCDXSXYDdX/edit?usp=sharing&ouid=101148340939463999290&rtpof=true&sd=true)
