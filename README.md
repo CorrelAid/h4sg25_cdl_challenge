@@ -37,3 +37,6 @@
 ## pdf Liste von im Jahr 2023 geförderten Organisationen:
 [hier](https://dserver.bundestag.de/btd/20/102/2010233.pdf)
 s. 80 (Anlage 1)
+
+## csv list of all NGOs dedicated to the goal of strengething democracy in Germany:
+[hier](data/ZER-Förderung des demokratischen Staatswesens-20250404.csv)
