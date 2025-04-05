@@ -1,4 +1,4 @@
-from helpers import match_organisations
+from helpers import match_organisations, norm_lev
 
 def test_match_organisations():
     """Test the match_organisations function with various cases."""
@@ -29,7 +29,10 @@ def test_match_organisations():
         # Edge cases
         ("", "", True),
         ("A", "a", True),
-        ("ABC", "ABCDEF", False)  # Too different
+        ("ABC", "ABCDEF", False), # Too different
+
+        # Cut off Names
+        ("Zentrum für Kunst und Medien Karlsruhe", "Zentrum für Kunst und Medien Karlsr", True)
     ]
 
     # Run tests
@@ -40,5 +43,33 @@ def test_match_organisations():
 
     print("All tests passed!")
 
+def test_norm_lev_thresholds():
+    # Test cases for threshold 0.3
+    # Should be similar (normalized distance < 0.3)
+    assert norm_lev("Microsoft Corporation", "Microsoft Corp.") < 0.3
+    assert norm_lev("Apple Inc.", "Apple Inc") < 0.3
+    assert norm_lev("Google LLC", "Google, LLC") < 0.3
+    assert norm_lev("Amazon.com", "Amazon") < 0.3
+    assert norm_lev("IBM", "International Business Machines") >= 0.3  # Should be different
+
+    # Test cases for threshold 0.5
+    # Should be similar (normalized distance < 0.5)
+    assert norm_lev("Microsoft Corporation", "Microsoft") < 0.5
+    assert norm_lev("Coca-Cola Company", "Coca Cola Co.") < 0.5
+    assert norm_lev("Johnson & Johnson", "Johnson and Johnson") < 0.5
+    assert norm_lev("Procter & Gamble", "Procter and Gamble") < 0.5
+    assert norm_lev("McDonald's Corporation", "McDonalds Corp") < 0.5
+
+    # Should be different (normalized distance >= 0.5)
+    assert norm_lev("Microsoft Corporation", "Apple Inc.") >= 0.5
+    assert norm_lev("Walmart", "Target Corporation") >= 0.5
+    assert norm_lev("Facebook, Inc.", "Meta Platforms") >= 0.5
+
+    # Edge cases
+    assert norm_lev("IBM", "IBM ") < 0.3  # Whitespace should be stripped
+    assert norm_lev("", "") == True  # Empty strings
+
+    print("All tests passed!")
+
 # Run the tests
-test_match_organisations()
+test_norm_lev_thresholds()
