@@ -13,6 +13,12 @@ def match_organisations(a, b, threshold=0.3):
     """
     if a.lower() == b.lower():
         return True
+    def rpl(s):
+            return s.replace("e.V.", "").replace("(haftungsbeschränkt)", "")
+    
+    # remove e.V. etc.
+    a = rpl(a)
+    b = rpl(b)
 
     # Edit distance-based match
     # Calculate normalized edit distance (0-1 scale)

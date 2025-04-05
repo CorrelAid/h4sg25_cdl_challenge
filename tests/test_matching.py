@@ -6,6 +6,7 @@ def test_match_organisations():
     test_cases = [
         # Should match (same organization with slight differences)
         ("Correl aid", "CorrelAid", True),
+        ("CorrelAid", "CorrelAid e.V.", True), # e.V. missing
         ("Caritas", "Karitas", True),
         ("Greenpeace", "Greenpeace", True),
 
