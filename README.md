@@ -26,21 +26,15 @@
 
 2. uv sync
 
-### Example Jupyte
+# New Data
 
+- [pdf Liste von im Jahr 2023 geförderten Organisationen aus Drucksache ] (https://dserver.bundestag.de/btd/20/102/2010233.pdf) s. 80 (Anlage 1)
+- [csv of all NGOs dedicated to the goal of strengething democracy in Germany] (https://github.com/CorrelAid/h4sg25_cdl_challenge/data/ZER-Förderung des demokratischen Staatswesens-20250404.csv)
 
 # New Plan
 1. extract list of NGOs and how much money they got from the government in 2023
 2. compare it to the list of NGOs
 3. calculate how high is the percentage of the whole amount that was dedicated to organizations with the goal of strengthening democracy
-   
-## pdf Liste von im Jahr 2023 geförderten Organisationen:
-[hier](https://dserver.bundestag.de/btd/20/102/2010233.pdf)
-s. 80 (Anlage 1)
-
-## csv list of all NGOs dedicated to the goal of strengething democracy in Germany:
-[hier](data/ZER-Förderung des demokratischen Staatswesens-20250404.csv)
-
 
 # all presentation data
 [hier direkt in die Präsnetation](https://docs.google.com/presentation/d/1L-oxCOHbYQvFwAtFDOzxMkiCDXSXYDdX/edit?usp=sharing&ouid=101148340939463999290&rtpof=true&sd=true)
