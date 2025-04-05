@@ -42,5 +42,6 @@ s. 80 (Anlage 1)
 [hier](data/ZER-Förderung des demokratischen Staatswesens-20250404.csv)
 
 
-# presentation draft
+# all presentation data
 [hier](https://docs.google.com/presentation/d/1L-oxCOHbYQvFwAtFDOzxMkiCDXSXYDdX/edit?usp=sharing&ouid=101148340939463999290&rtpof=true&sd=true)
+[hier](https://drive.google.com/drive/folders/1szpJHaoji9PNzvuhVEgPEwq0DcM7yi-K?usp=sharing)
