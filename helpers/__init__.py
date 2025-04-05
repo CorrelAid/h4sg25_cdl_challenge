@@ -75,7 +75,7 @@ def norm_lev(a, b):
     return edit_distance / max_len
 
 
-def match_organisations(a, b, use_llm=False, threshold=0.2, max_threshold=0.4):
+def match_organisations(a, b, use_llm=False, threshold=0.2, max_threshold=0.5):
     """
     Match organization names considering exact matches and edit distance.
 
